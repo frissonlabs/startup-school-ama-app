@@ -1,1 +1,1 @@
-# Startup School Ask Me Anythng Bot - App
+# Startup School Ask Me Anything Bot - App
