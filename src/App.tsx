@@ -50,7 +50,7 @@ function App() {
 			document.removeEventListener("keydown", handleKeyDown, false);
 		};
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+	}, [question]);
 
 	return (
 		<div className="App">
