@@ -17,6 +17,7 @@ function App() {
 		// 	.then((data) => {
 		// 		console.log(data);
 		// 	});
+		if (!question.length || isLoading) return;
 
 		setAnswer("");
 		setIsLoading(true);
@@ -34,10 +35,11 @@ function App() {
 	};
 
 	const handleKeyDown = (event: any) => {
-		event.preventDefault();
 		if (event.key === "Enter") {
+			event.preventDefault();
 			ask();
-		} else if (event.key === "Tab") {
+		} else if (event.key === "Tab" && !question.length) {
+			event.preventDefault();
 			setQuestion(placeholder);
 		}
 	};
